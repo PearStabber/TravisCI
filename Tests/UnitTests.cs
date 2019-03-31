@@ -106,7 +106,7 @@ namespace TravisCILab
             Assert.Throws<ArgumentNullException>(() => Program.Divide(null, null));
         }
 
-        //Power (third test should fail its third assert)
+        //Power
         [Test]
         public void Power_Valid()
         {
@@ -128,7 +128,7 @@ namespace TravisCILab
         {
             Assert.Throws<ArgumentNullException>(() => Program.Power("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Power(null, "1"));
-            Assert.Throws<ArgumentNullException>(() => Program.Power(1, 2));
+            Assert.Throws<ArgumentNullException>(() => Program.Power(null, null));
         }
     }
 }
